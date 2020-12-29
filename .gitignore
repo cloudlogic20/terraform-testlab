@@ -1,0 +1,6 @@
+**/.terraform
+**/*.pub
+**/*.tfstate.backup
+**/*tfstate*
+data_backup/
+test_lab/
