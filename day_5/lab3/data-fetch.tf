@@ -29,7 +29,7 @@ variable "list" {
 }
 
 resource "aws_instance" "cloudlogic" {
-  ami           = "ami-08f63db601b82ff5f"
+  ami           = "ami-04b1ddd35fd71475a"
   instance_type = var.types["ap-south-1"]
 #  instance_type = var.list[2]
 
