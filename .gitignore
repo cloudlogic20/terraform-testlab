@@ -3,4 +3,4 @@
 **/*.tfstate.backup
 **/*tfstate*
 data_backup/
-test_lab/
+separate/
