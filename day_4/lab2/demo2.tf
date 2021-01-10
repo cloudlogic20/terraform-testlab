@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 resource "aws_eip" "lb" {
-  vpc      = true
+  vpc = true
 }
 
 output "EIP" {

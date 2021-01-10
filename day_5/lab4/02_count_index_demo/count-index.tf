@@ -15,15 +15,15 @@ provider "aws" {
 }
 
 variable "elb_names" {
-  type = list
-  default = ["dev-loadbalancer", "stage-loadbalanacer","prod-loadbalancer"]
+  type    = list(any)
+  default = ["dev-loadbalancer", "stage-loadbalanacer", "prod-loadbalancer"]
 }
 
 resource "aws_iam_user" "lb" {
   # name = loadbalancer
   # name = "loadbalancer-${count.index}"
-  name = var.elb_names[count.index]
+  name  = var.elb_names[count.index]
   count = 3
-  path = "/system/"
+  path  = "/system/"
 }
 

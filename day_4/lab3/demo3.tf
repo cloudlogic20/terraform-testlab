@@ -24,7 +24,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_eip" "demoeip" {
-  vpc      = true
+  vpc = true
 }
 
 /*

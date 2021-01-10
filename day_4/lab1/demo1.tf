@@ -24,7 +24,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_eip" "lb" {
-  vpc      = true
+  vpc = true
 }
 
 resource "aws_iam_user" "demouser" {
