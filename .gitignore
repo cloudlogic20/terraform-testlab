@@ -1,6 +1,9 @@
 **/.terraform
 **/*.pub
-**/*.tfstate.backup
-**/*tfstate*
 data_backup/
 separate/
+**/crash.log
+**/*.tfstate.backup
+**/*tfstate
+
+##  You can prepend a pattern with a double asterisk to match directories anywhere in the repository.
