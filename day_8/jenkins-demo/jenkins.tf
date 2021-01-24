@@ -5,6 +5,7 @@ resource "docker_image" "jenkins_image" {
 resource "docker_container" "jenkins_container" {
   image = docker_image.jenkins_image.name
   name  = "JenkinsCI"
+  user = "root"
 
   ports {
     internal = "8080"
